@@ -1,0 +1,39 @@
+/* box-sizing 是用于声明盒模型的类型 */
+
+.content-box {
+    /* 标准盒模型 */
+    box-sizing: content-box;
+    /* margin对标准和怪异盒子效果都差不多 */
+    margin: 100px;
+    padding: 50px;
+    border: 10px solid #66f;
+    /* 这里的width 估计就是content的width */
+    width: 80px;
+    height: 80px;
+    background-color: #f66;
+}
+
+.border-box {
+    /* 怪异盒模型 */
+    box-sizing: border-box;
+    margin: 100px;
+    padding: 50px;
+    border: 10px solid #66f;
+    /* 这里的width是包括了border + padding + width */
+    /* 如果说 border + padding 的width超过了这个width
+    ，则content的width就为0 */
+    width: 80px;
+    height: 80px;
+    background-color: #f66;
+}
+
+ul {
+    /* 把文本排列到中间 */
+    text-align: center;
+}
+
+li {
+    display: inline-block;
+    /* 骚气~ */
+    margin-left: -5px;
+}

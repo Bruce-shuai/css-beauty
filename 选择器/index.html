@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class='specify-selector'>
+        <ul class='list'>
+            <li>同胞元素</li>
+            <li class='next'>当前元素</li>
+            <li>同胞元素</li>
+            <li>同胞元素</li>
+            <li>同胞元素</li>
+        </ul>
+        <ul class='list'>
+            <li>同胞元素</li>
+            <li class='next-all'>当前元素</li>
+            <li>同胞元素</li>
+            <li>同胞元素</li>
+            <li>同胞元素</li>
+        </ul>
+        <ul class='list'>
+            <li>同胞元素</li>
+            <li class='next-filter'>当前元素</li>
+            <li>同胞元素</li>
+            <li class='filter'>同胞元素</li>
+            <li>同胞元素</li>
+        </ul>
+    </div>
+    <div class='specify-selector'>
+        <div class='button'>
+            <!-- radio  单选按钮，允许在多个拥有相同 name 值的选项中选中其中一个。-->
+            <!-- "hidden" 类型的 <input> 元素允许 Web 开发者存放一些用户不可见、
+              不可改的数据，在用户提交表单时，这些数据会一并发送出 -->
+            <!-- 在这里单独使用hidden，是为了让用户看不见前面的单选按钮 -->
+            <!-- 这里的input 结尾是没有 / 的 -->
+            <!-- label 和 input 搭配倒是一个好方法 -->
+            <input id='btn1' type='radio' name='btns' hidden>
+            <label for='btn1'>点击我切换模式</label>
+        </div>
+        <div class='button'>
+            <input id='btn2' type='radio' name='btns' hidden>
+            <label for='btn2'>点击我切换模式</label>
+        </div>
+        <div class='button'>
+            <input id='btn3' type='radio' name='btns' hidden>
+            <label for='btn3'>点击我切换模式</label>
+        </div>
+    </div>
+</body>
+
+</html>

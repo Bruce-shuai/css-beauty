@@ -1,0 +1,41 @@
+.hover-tips {
+    position: relative;
+    padding: 0 20px;
+    border-radius: 10px;
+    height: 40px;
+    background-color: #66f;
+    line-height: 40px;
+    color: #fff;
+    &+.hover-tips {
+        margin-top: 10px;
+    }
+    &.btn-1 {
+        &::after {
+            position: absolute;
+            left: 0;
+            top: 0;
+            border-radius: 5px;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(#000, .5);
+            opacity: 0;
+            text-align: center;
+            font-size: 12px;
+            // 这个data-msg要想想是怎么回事
+            // attr() 理论上能用于所有的CSS属性但目前支持的仅有伪元素的 content 属性
+            content: attr(data-msg);
+            transition: all 300ms;
+        }
+        // 这两个after分别是什么意思呢？
+        &:hover::after {
+            // 这个calc的用法是什么？ 注意 +或-两边一定都要有空格才行
+            left: calc(100% + 20px);
+            opacity: 1;
+        }
+    }
+    // empty 伪元素是干啥用的？  无子元素的元素
+    &.btn-2:empty::after {
+        // 获取数据href
+        content: attr(href);
+    }
+}

@@ -1,0 +1,40 @@
+// 自己手写的，这个是真的妙~
+.cleared-attr {
+    li {
+        list-style: none;
+        color: #813c85;
+        &.first-line {
+            span:not(:last-child)::after {
+                content: ",";
+            }
+        }
+        &.second-line {
+            span:not(:nth-child(-n+3)) {
+                display: none;
+            }
+        }
+    }
+}
+
+// .cleared-attr {
+//     li {
+//         list-style: none;
+//         // height = line-height 使文字居中对齐
+//         height: 40px;
+//         line-height: 40px;
+//     }
+//     span {
+//         display: inline-block; // 设置成内联块的作用是什么呢？
+//         color: #66f;
+//     }
+//     // 后代选择器  :not() 排除指定元素不适用设置样式
+//     // not(:last-child) 是选中span中非最后一个元素来设置 ,  我艹，厉害...
+//     .first-line span:not(:last-child)::after {
+//         // 这个用得真的有点骚~
+//         content: ",";
+//     }
+//     // 选中span中非1~3的设置样式
+//     .second-line span:not(:nth-child(-n+3)) {
+//         display: none;
+//     }
+// }

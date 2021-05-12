@@ -1,0 +1,8 @@
+.sun {
+    width: auto;
+    &:hover {
+        transition: all 3000ms;
+        // 我草，这个用法是真的厉害
+        filter: grayscale(100%);
+    }
+}

@@ -1,0 +1,1 @@
+.cleared-attr li{list-style:none;color:#813c85}.cleared-attr li.first-line span:not(:last-child)::after{content:","}.cleared-attr li.second-line span:not(:nth-child(-n+3)){display:none}

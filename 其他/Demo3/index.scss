@@ -1,0 +1,15 @@
+.justify-text {
+    li {
+        padding: 0 20px;
+        width: 100px;
+        height: 40px;
+        background-color: #f66;
+        line-height: 40px;
+        // 牛逼的用法！
+        text-align-last: justify;
+        color: #fff;
+        &+li {
+            margin-top: 5px;
+        }
+    }
+}

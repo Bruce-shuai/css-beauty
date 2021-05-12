@@ -1,0 +1,39 @@
+.form-validation {
+    width: 300px;
+    // 在这里使用+或者~应该都是可以的吧？！
+    div+div {
+        margin-top: 10px;
+    }
+    label {
+        display: block;
+        padding-bottom: 5px; // 如果没设置成block， padding-bottom甚至无法使用
+        font-weight: bold;
+        font-size: 16px;
+    }
+    input,
+    textarea {
+        display: block;
+        padding: 0 20px;
+        border: 1px solid #ccc;
+        width: 100%;
+        height: 40px;
+        outline: none;
+        // 光标的颜色
+        caret-color: #09f;
+        transition: all 300ms;
+        // 这里用得精彩 但是应该和required一起使用才行
+        &:valid {
+            border-color: #3c9;
+        }
+        &:invalid {
+            border-color: #f66;
+        }
+    }
+    textarea {
+        height: 122px;
+        // 禁止人为的把textarea进行拉大拉小，很有特点
+        resize: none;
+        line-height: 30px;
+        font-size: 16px;
+    }
+}

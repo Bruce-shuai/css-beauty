@@ -1,0 +1,14 @@
+.vertical-text {
+    // writing-mode 属性定义了文本在水平或垂直方向上如何排布。
+    writing-mode: vertical-rl;
+    h3 {
+        padding-left: 20px;
+        font-weight: bold;
+        font-size: 26px;
+        color: #ec4e8a;
+    }
+    p {
+        line-height: 30px;
+        color: #74759b;
+    }
+}

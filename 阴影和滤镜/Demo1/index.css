@@ -1,0 +1,26 @@
+.rainbow-bar {
+    width: 250px
+}
+
+.rainbow-bar.bar-1 {
+    overflow: hidden;
+    position: relative;
+    height: 125px
+}
+
+.rainbow-bar.bar-1::after {
+    display: block;
+    border-radius: 100%;
+    width: 100%;
+    height: 200%;
+    box-shadow: 0 0 0 8px #f66 inset, 0 0 0 16px #f90 inset, 0 0 0 24px #ff3 inset, 0 0 0 32px #3c9 inset, 0 0 0 40px #9c3 inset, 0 0 0 48px #09f inset, 0 0 0 56px #66f inset;
+    content: ""
+}
+
+.rainbow-bar.bar-2 {
+    margin: 125px 0 0 50px;
+    border-radius: 100%;
+    height: 250px;
+    box-shadow: 0 0 0 8px #f66 inset, 0 0 0 16px #f90 inset, 0 0 0 24px #ff3 inset, 0 0 0 32px #3c9 inset, 0 0 0 40px #9c3 inset, 0 0 0 48px #09f inset, 0 0 0 56px #66f inset;
+    clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%)
+}

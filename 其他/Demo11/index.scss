@@ -1,0 +1,32 @@
+.gradient-bg {
+    display: flex;
+    // 这种操作，让文字放在正中间
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    // linear-gradient:linear-gradient() 函数用于创建一个表示两种或多种颜色线性渐变的图片
+    // https://www.runoob.com/cssref/func-linear-gradient.html
+    // 这个background的内容有待学习啊~  掘金小册有讲
+    // 400%  400%是图片的大小
+    // left  center是图片的起始位置
+    background: linear-gradient(135deg, #f66, #f90, #3c9, #09f, #66f) left center/400% 400%;
+    // background: linear-gradient(blue, red);
+    font-weight: bold;
+    font-size: 100px;
+    color: #fff;
+    // 通过animation 来控制@keyframes
+    // infinite 是让动画无限次播放
+    animation: move 10s infinite;
+}
+
+// 这个用法就骚了~
+// 0%是开头动画   100%是动画完成
+@keyframes move {
+    0%,
+    100% {
+        background-position-x: left;
+    }
+    50% {
+        background-position-x: right;
+    }
+}

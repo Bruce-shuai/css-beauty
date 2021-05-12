@@ -1,0 +1,40 @@
+.grail-layout {
+    height: 300px;
+    background-color: #813c85;
+    .left {
+        float: left;
+        height: 100%;
+        width: 100px;
+        background-color: #ef498b;
+    }
+    .right {
+        float: right;
+        height: 100%;
+        width: 100px;
+        background-color: #e0c8d1;
+    }
+}
+
+// .grail-layout {
+//     padding: 0 100px;
+//     // width: 400px;
+//     height: 400px;
+//     .left {
+//         float: left;
+//         margin-left: -100px;
+//         width: 100px;
+//         height: 100%;
+//         background-color: #f66;
+//     }
+//     .right {
+//         float: right;
+//         margin-right: -100px;
+//         width: 100px;
+//         height: 100%;
+//         background-color: #66f;
+//     }
+//     .center {
+//         height: 100%;
+//         background-color: #3c9;
+//     }
+// }

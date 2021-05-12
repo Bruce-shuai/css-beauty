@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>盒模型</title>
+    <!-- 必须要写rel 和href -->
+    <link rel='stylesheet' href='index.css'></link>
+</head>
+
+<body>
+    <div>
+        <!-- 空白折叠问题 -->
+        <ul>
+            <li>123</li>
+            <li>123</li>
+            <li>123</li>
+        </ul>
+
+
+        <div class="content-box"></div>
+        <div class="border-box"></div>
+        <!-- 块级元素可包含块级元素和行内元素 -->
+        <!-- 行内元素可包含行内元素，不能包含块级元素 -->
+        <p>我是<span>JowayYoung</span>，我的公众号是<span>IQ前端</span></p>
+    </div>
+</body>
+
+</html>

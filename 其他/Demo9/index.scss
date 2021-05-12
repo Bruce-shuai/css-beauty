@@ -1,0 +1,35 @@
+.form-value {
+    font-size: 16px;
+    font-weight: bold;
+    div {
+        margin-bottom: 15px;
+        label {
+            display: block;
+        }
+        input,
+        textarea {
+            font-size: 16px;
+            // 光标的颜色
+            caret-color: #09f;
+            padding-left: 20px;
+        }
+        input {
+            height: 30px;
+            width: 240px;
+            // outline 很重要，让input点击的时候不会出现那个蓝色框子
+            outline: none;
+            &:valid {
+                border-color: #248067;
+            }
+            &:invalid {
+                border-color: #813c85;
+            }
+        }
+        textarea {
+            height: 100px;
+            width: 240px;
+            resize: none;
+            border-color: #813c85;
+        }
+    }
+}

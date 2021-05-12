@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>使用:vaild 和 :invalid 校验表单</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <form class="form-validation">
+        <div>
+            <!-- 这里写label感觉效果也不是很大？ -->
+            <label>名字</label>
+            <!-- pattern这个用法感觉挺秀的 -->
+            <!-- required 是用来干什么的呢？ -->
+            <!-- required属性是一个布尔属性，必须规定在提交表单之前填写输入字段 -->
+            <!-- pattern 属性规定用于验证 <input> 元素的值的正则表达式。 -->
+            <input id='name' type="text" placeholder="请输入你的名字(1到10个中文)" pattern="^[\u4e00-\u9fa5]{1,10}$" required>
+        </div>
+        <div>
+            <label>手机</label>
+            <input type="text" placeholder="请输入你的手机" pattern="^1[3456789]\d{9}$" required>
+        </div>
+        <div>
+            <label>简介</label>
+            <textarea required></textarea>
+        </div>
+    </form>
+</body>
+
+</html>

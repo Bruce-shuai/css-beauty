@@ -1,0 +1,83 @@
+    li {
+        // 鼠标未悬浮状态
+        &:hover {
+            // 鼠标悬浮状态
+        }
+    }
+    
+    .accordion {
+        // flex默认是横向排列
+        display: flex;
+        // 这里是ul 这个盒子整体长200px  宽600px
+        width: 600px;
+        height: 200px;
+        li {
+            // flex: 1是为了自适应吗？
+            flex: 1;
+            // 手指标志
+            cursor: pointer;
+            // 这个是具体怎么使用的呢？ 似乎是过渡为0.3s
+            transition: all 300ms;
+            // 去掉小圆点
+            list-style: none;
+            // 下面这个指定是真的舒服  &  是代指当前的节点
+            &:nth-child(1) {
+                background-color: #f66;
+            }
+            &:nth-child(2) {
+                background-color: #66f;
+            }
+            &:nth-child(3) {
+                background-color: #f90;
+            }
+            &:nth-child(4) {
+                background-color: #09f;
+            }
+            &:nth-child(5) {
+                background-color: #9c3;
+            }
+            &:nth-child(6) {
+                background-color: #3c9;
+            }
+            &:hover {
+                // 秀啊！！我艹，无情！flex是真的灵活
+                flex: 2;
+                background-color: #ccc;
+            }
+        }
+    }
+    
+    .accordion {
+        display: flex;
+        width: 600px;
+        height: 200px;
+        // background-color: red;
+        li {
+            flex: 1;
+            cursor: pointer;
+            list-style: none;
+            transition: all 300ms;
+            &:nth-child(1) {
+                background-color: #f66;
+            }
+            &:nth-child(2) {
+                background-color: #66f;
+            }
+            &:nth-child(3) {
+                background-color: #f90;
+            }
+            &:nth-child(4) {
+                background-color: #09f;
+            }
+            &:nth-child(5) {
+                background-color: #9c3;
+            }
+            &:nth-child(6) {
+                background-color: #3c9;
+            }
+            &:hover {
+                flex: 2;
+                background-color: #ccc;
+            }
+        }
+    }
