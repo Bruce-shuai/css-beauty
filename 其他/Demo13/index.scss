@@ -1,0 +1,44 @@
+// 这应该是变量的用法？！
+$bg: "https://static.yangzw.vip/codepen/lake.jpg";
+.bruce {
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    p {
+        height: 300px;
+        line-height: 300px;
+        text-align: center;
+        font-size: 10px;
+        color: #f66;
+    }
+}
+
+.parallax-scrolling {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1000px;
+    // no-repeat: 图像仅重复一次
+    // fixed: 图像不会随页面滚动而移动
+    background: url($bg) no-repeat center fixed;
+    li {
+        width: 500px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 60px;
+        &:nth-child(1) {
+            color: #f66;
+            // translateZ(z): z轴位移， 等同于 translate3d(0, 0, z)
+            transform: translateZ(-1px);
+        }
+        &:nth-child(2) {
+            color: #09f;
+            transform: translateZ(-2px);
+        }
+        &:nth-child(3) {
+            color: #3c9;
+            transform: translateZ(-3px);
+        }
+    }
+}

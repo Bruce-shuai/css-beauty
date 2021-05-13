@@ -7,7 +7,7 @@
     margin: 100px;
     padding: 50px;
     border: 10px solid #66f;
-    /* 这里的width 估计就是content的width */
+    /* 这里的width，height 是content的width和height */
     width: 80px;
     height: 80px;
     background-color: #f66;
@@ -19,7 +19,7 @@
     margin: 100px;
     padding: 50px;
     border: 10px solid #66f;
-    /* 这里的width是包括了border + padding + width */
+    /* 这里的width是包括了border + padding + content */
     /* 如果说 border + padding 的width超过了这个width
     ，则content的width就为0 */
     width: 80px;
