@@ -12,3 +12,17 @@
         color: #74759b;
     }
 }
+
+.list {
+    h3 {
+        color: #cc5595;
+    }
+    list-style: none;
+    color: #815c94;
+    writing-mode: vertical-rl;
+    // 这里的标点符号有待解决 
+    li::after {
+        writing-mode: unset;
+        content: ", ";
+    }
+}

@@ -13,3 +13,20 @@
         }
     }
 }
+
+.school {
+    li {
+        list-style: none;
+        color: #fff;
+        width: 200px;
+        height: 50px;
+        font-size: 18px;
+        padding: 0 20px;
+        line-height: 50px;
+        background-color: #ef498b;
+        text-align-last: justify;
+        &~li {
+            margin-top: 10px;
+        }
+    }
+}

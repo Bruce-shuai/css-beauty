@@ -1,1 +1,1 @@
-.justify-text li{padding:0 20px;width:100px;height:40px;background-color:#f66;line-height:40px;text-align-last:justify;color:#fff}.justify-text li+li{margin-top:5px}
+.justify-text li{padding:0 20px;width:100px;height:40px;background-color:#f66;line-height:40px;text-align-last:justify;color:#fff}.justify-text li+li{margin-top:5px}.school li{list-style:none;color:#fff;width:200px;height:50px;font-size:18px;padding:0 20px;line-height:50px;background-color:#ef498b;text-align-last:justify}.school li ~ li{margin-top:10px}

@@ -37,3 +37,27 @@ li {
     /* 骚气~ */
     margin-left: -5px;
 }
+
+.contentBox {
+    box-sizing: content-box;
+    /* -----------content--------------- */
+    background-color: #66c18c;
+    width: 60px;
+    height: 60px;
+    /* --------------------------------- */
+    /* ------------border--------------- */
+    border: #b2cf87 8px solid;
+    /* --------------------------------- */
+}
+
+.borderBox {
+    box-sizing: border-box;
+    /* -----------content--------------- */
+    width: 60px;
+    height: 60px;
+    background-color: #f7da94;
+    /* --------------------------------- */
+    /* ------------border--------------- */
+    border: #fa7e23 8px solid;
+    /* --------------------------------- */
+}

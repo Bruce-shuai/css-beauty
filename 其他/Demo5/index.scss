@@ -1,58 +1,87 @@
 .horizontal-list {
-    // 这个到底是有什么用呢？
-    // overflow: hidden;   
-    width: 300px;
-    height: 100px;
-    &+.horizontal-list {
-        margin-top: 10px;
+  // 这个到底是有什么用呢？
+  // overflow: hidden;
+  width: 300px;
+  height: 100px;
+  & + .horizontal-list {
+    margin-top: 10px;
+  }
+  ul {
+    // 这个用法是什么？
+    overflow-x: auto;
+    cursor: pointer;
+    &::-webkit-scrollbar {
+      height: 10px;
     }
+    &::-webkit-scrollbar-track {
+      background-color: #f0f0f0;
+    }
+    &::-webkit-scrollbar-thumb {
+      border-radius: 5px;
+      background-color: #f66;
+    }
+  }
+  li {
+    overflow: hidden;
+    height: 90px;
+    background-color: #66f;
+    line-height: 90px;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    & + li {
+      margin-left: 10px;
+    }
+  }
+  &.flex {
     ul {
-        // 这个用法是什么？
-        overflow-x: auto;
-        cursor: pointer;
-        &::-webkit-scrollbar {
-            height: 10px;
-        }
-        &::-webkit-scrollbar-track {
-            background-color: #f0f0f0;
-        }
-        &::-webkit-scrollbar-thumb {
-            border-radius: 5px;
-            background-color: #f66;
-        }
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-between;
     }
     li {
-        overflow: hidden;
-        height: 90px;
-        background-color: #66f;
-        line-height: 90px;
-        text-align: center;
-        font-size: 16px;
-        color: #fff;
-        &+li {
-            margin-left: 10px;
-        }
+      flex-shrink: 0;
+      flex-basis: 90px;
     }
-    &.flex {
-        ul {
-            display: flex;
-            flex-wrap: nowrap;
-            justify-content: space-between;
-        }
-        li {
-            flex-shrink: 0;
-            flex-basis: 90px;
-        }
+  }
+  &.inline {
+    height: 102px;
+    ul {
+      overflow-y: hidden;
+      white-space: nowrap;
     }
-    &.inline {
-        height: 102px;
-        ul {
-            overflow-y: hidden;
-            white-space: nowrap;
-        }
-        li {
-            display: inline-block;
-            width: 90px;
-        }
+    li {
+      display: inline-block;
+      width: 90px;
     }
+  }
+}
+
+// 有点迷呀....
+.test {
+  ul {
+    overflow-x: auto;
+    cursor: pointer;
+    // overflow-y: hidden;
+    // white-space: nowrap;
+    &::-webkit-scrollbar {
+      height: 10px;
+    }
+    &::-webkit-scrollbar-track {
+      background-color: #f0f0f0;
+    }
+    &::-webkit-scrollbar-thumb {
+      border-radius: 5px;
+      background-color: #f66;
+    }
+    li {
+      width: 80px;
+      height: 40px;
+      line-height: 40px;
+      padding: 5px 10px;
+      color: #fff; // 白色把小圆点都覆盖了
+      background-color: #ef498b;
+      margin-top: 6px;
+    }
+  }
 }
