@@ -1,0 +1,49 @@
+.container1 {
+  /* 默认情况下，父div没有设置高度，它的高度可以被子div任意撑大 */
+  background-color: #525288;
+}
+.div1 {
+  background-color: #a7a8bd;
+  width: 100px;
+  height: 100px;
+}
+.div2 {
+  background-color: #c21f30;
+  width: 100px;
+  height: 100px;
+}
+
+/* 当父div有固定高度时，如果子div的高度超过了父div的高度，
+  那么子div会超出父div的束缚，这种情况就叫做溢出 */
+.container2 {
+  /* 默认情况下，父div没有设置高度，它的高度可以被子div任意撑大 */
+  background-color: #525288;
+  height: 150px;
+}
+.div1 {
+  background-color: #a7a8bd;
+  width: 100px;
+  height: 100px;
+}
+.div2 {
+  background-color: #c21f30;
+  width: 100px;
+  height: 100px;
+}
+
+/* 为了隐藏子元素溢出的部分，可以为父div设置overflow:hidden */
+.container3 {
+  background-color: #525288;
+  height: 150px; /* 给父div添加固定高度 */
+  overflow: hidden; /* 隐藏溢出 */
+}
+.div1 {
+  background-color: #a7a8bd;
+  width: 100px;
+  height: 100px;
+}
+.div2 {
+  background-color: #c21f30;
+  width: 100px;
+  height: 100px;
+}

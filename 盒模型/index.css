@@ -1,63 +1,63 @@
 /* box-sizing 是用于声明盒模型的类型 */
 
 .content-box {
-    /* 标准盒模型 */
-    box-sizing: content-box;
-    /* margin对标准和怪异盒子效果都差不多 */
-    margin: 100px;
-    padding: 50px;
-    border: 10px solid #66f;
-    /* 这里的width，height 是content的width和height */
-    width: 80px;
-    height: 80px;
-    background-color: #f66;
+  /* 标准盒模型 */
+  box-sizing: content-box;
+  /* margin对标准和怪异盒子效果都差不多 */
+  margin: 100px;
+  padding: 50px;
+  border: 10px solid #66f;
+  /* 这里的width，height 是content的width和height */
+  width: 80px;
+  height: 80px;
+  background-color: #f66;
 }
 
 .border-box {
-    /* 怪异盒模型 */
-    box-sizing: border-box;
-    margin: 100px;
-    padding: 50px;
-    border: 10px solid #66f;
-    /* 这里的width是包括了border + padding + content */
-    /* 如果说 border + padding 的width超过了这个width
+  /* 怪异盒模型 */
+  box-sizing: border-box;
+  margin: 100px;
+  padding: 50px;
+  border: 10px solid #66f;
+  /* 这里的width是包括了border + padding + content */
+  /* 如果说 border + padding 的width超过了这个width
     ，则content的width就为0 */
-    width: 80px;
-    height: 80px;
-    background-color: #f66;
+  width: 80px;
+  height: 80px;
+  background-color: #f66;
 }
 
 ul {
-    /* 把文本排列到中间 */
-    text-align: center;
+  /* 把文本排列到中间 */
+  text-align: center;
 }
 
 li {
-    display: inline-block;
-    /* 骚气~ */
-    margin-left: -5px;
+  display: inline-block;
+  /* 骚气~ */
+  margin-left: -5px;
 }
 
 .contentBox {
-    box-sizing: content-box;
-    /* -----------content--------------- */
-    background-color: #66c18c;
-    width: 60px;
-    height: 60px;
-    /* --------------------------------- */
-    /* ------------border--------------- */
-    border: #b2cf87 8px solid;
-    /* --------------------------------- */
+  box-sizing: content-box;
+  /* -----------content--------------- */
+  background-color: #66c18c;
+  width: 60px;
+  height: 60px;
+  /* --------------------------------- */
+  /* ------------border--------------- */
+  border: #b2cf87 8px solid;
+  /* --------------------------------- */
 }
 
 .borderBox {
-    box-sizing: border-box;
-    /* -----------content--------------- */
-    width: 60px;
-    height: 60px;
-    background-color: #f7da94;
-    /* --------------------------------- */
-    /* ------------border--------------- */
-    border: #fa7e23 8px solid;
-    /* --------------------------------- */
+  box-sizing: border-box;
+  /* -----------content--------------- */
+  width: 60px;
+  height: 60px;
+  background-color: #f7da94;
+  /* --------------------------------- */
+  /* ------------border--------------- */
+  border: #fa7e23 8px solid;
+  /* --------------------------------- */
 }

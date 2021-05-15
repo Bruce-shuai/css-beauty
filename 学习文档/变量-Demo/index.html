@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>条形加载条</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <!-- 未使用css变量解决List问题的时候 -->
+  <ul class="strip-loading">
+    <!-- v-for :key 这是什么用法呢？ -->
+    <li v-for="v in 6":key="v"></li>
+    <li v-for="v in 6":key="v"></li>
+    <li v-for="v in 6":key="v"></li>
+    <li v-for="v in 6":key="v"></li>
+    <li v-for="v in 6":key="v"></li>
+    <li v-for="v in 6":key="v"></li>
+  </ul>
+
+  <!-- 使用css变量解决List问题的时候 -->
+  <ul class="strip-loading2">
+    <li v-for="v in 6" :key="v" :style="`--line-index: ${v}`"></li>
+    <li v-for="v in 6" :key="v" :style="`--line-index: ${v}`"></li>
+    <li v-for="v in 6" :key="v" :style="`--line-index: ${v}`"></li>
+    <li v-for="v in 6" :key="v" :style="`--line-index: ${v}`"></li>
+    <li v-for="v in 6" :key="v" :style="`--line-index: ${v}`"></li>
+    <li v-for="v in 6" :key="v" :style="`--line-index: ${v}`"></li>
+</ul>
+</body>
+</html>
