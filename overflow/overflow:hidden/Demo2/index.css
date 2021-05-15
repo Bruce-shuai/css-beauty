@@ -1,0 +1,29 @@
+.container1 {
+  /* 默认情况下，父div没有设置高度，它的高度可以被子div任意撑大 */
+  /*这个颜色是不会再显示了*/
+  /* 原因解析: 背景色为黑色父div消失了。这是因为：浮动的元素脱离文档元素，不占据空间。
+  不浮动的元素会直接无视掉这个元素：父div无视了自己的两个孩子，其高度为0(因为我们没有设置父div的高度),所以父div没有显现 */
+
+  /* 让父div显现颜色有两个办法：*/
+  /* 1.让父div也浮动起来 */
+  background-color: black;
+  /* float: right; */
+  /* 因为浮动的div已经失去了其“独霸一行”的能力，需手动为父div设置一个宽度 */
+  /* width: 400px; */
+
+  /* 2.为父div添加: overflow: hidden属性用以清除浮动 */
+  overflow: hidden;
+  /* 注意：浮动起来的div失去了div独占一行的特性，而清除浮动的父div仍然独占一行 */
+}
+.div1 {
+  background-color: #a7a8bd;
+  float: left;
+  width: 100px;
+  height: 100px;
+}
+.div2 {
+  float: left;
+  background-color: #c21f30;
+  width: 100px;
+  height: 100px;
+}

@@ -1,0 +1,40 @@
+/* 
+  CSS中年存在一个margin collapse，即边界坍塌或者说边界重叠
+
+  对于上下两个并列的div块而言，上面div的margin-bottom和下面div的margin-top会塌陷，
+  也就是会取上下两者margin里最大值作为显示值，所以从这个意义上说：CSS及浏览器的设计者们希望我们在布局时，
+  如果遇到上下两个并排内容块的安排，最好只设置其中每个块上或下margin的一处即可。
+*/
+.container1 {
+  background-color: #525288;
+}
+.div1 {
+  background-color: #a7a8bd;
+  width: 100px;
+  height: 100px;
+  margin-top: 50px;
+}
+.div2 {
+  background-color: #c21f30;
+  width: 100px;
+  height: 100px;
+}
+
+.container2 {
+  background-color: #525288;
+  border: 3px #5a1216 solid;
+  overflow: hidden; /* 解除坍塌 */
+  /* padding-top: 50px; */
+}
+.div1 {
+  background-color: #a7a8bd;
+  width: 100px;
+  height: 100px;
+  margin-top: 50px;
+}
+.div2 {
+  background-color: #c21f30;
+
+  width: 100px;
+  height: 100px;
+}
